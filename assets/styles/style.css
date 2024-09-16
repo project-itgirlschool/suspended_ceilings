@@ -1,7 +1,30 @@
 /* Шрифты */
 
 /* Header */
-
+header {
+    padding: 10px 16px 8px 16px;
+}
+header>.logos>.messengers>.logo-messenger {
+    width: 35px;
+}
+header>.logos>.logo-site {
+    width: 50px;
+}
+header>.burger-menu>.menu {
+    width: 28px;
+}
+header>.logos>.messengers {
+    width: 90px;
+}
+header>.logos {
+    width: 190px;
+}
+.header-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 /* Main */
 
 /* Footer */
