@@ -1,4 +1,11 @@
 /* Шрифты */
+@font-face {
+    src: url("../fonts/montserrat-regular.ttf");
+    font-family: "Montserrat";
+}
+html {
+    font-family: "Montserrat", sans-serif;
+}
 
 /* Header */
 
