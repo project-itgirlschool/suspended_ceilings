@@ -68,6 +68,79 @@ align-items:  center;
     background-position: center;
 }
 
+/*block3*/
+
+.block3{
+    width: 360px;
+}
+.stock{
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 20% 60% 1fr;
+
+}
+
+.stock h2{
+  display: grid;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.banner1{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    
+}
+.banner2{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/3
+    
+}
+
+#left{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 39px;
+    height: 41px;
+    border: none;
+    background-image:url('../images/block3/batton_left.svg');
+    background-size: cover;
+    margin-left: 70%;
+
+}
+#right{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 39px;
+    height: 41px;
+    border: none;
+    background-image:url('../images/block3/batton_right.svg');
+    background-size: cover;
+    margin-left: 10%;
+}
+
+.advantages{
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: repeat(25% 4); 
+    margin: 1rem;
+
+
+}
+.advantages h2{
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
 
 /* Footer */
 
