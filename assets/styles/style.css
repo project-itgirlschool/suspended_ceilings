@@ -10,7 +10,7 @@ header>.logos>.messengers>.logo-messenger {
 header>.logos>.logo-site {
     width: 50px;
 }
-header>.burger-menu>.menu {
+header>.burger-menu>button>.icon-menu {
     width: 28px;
 }
 header>.logos>.messengers {
@@ -25,6 +25,17 @@ header>.logos {
     justify-content: space-between;
     align-items: center;
 }
+nav{
+    display: none;
+}
+.button-first_block{
+    border: none;
+    background-color: #0F8DA6;
+    color: #FFFFFF;
+    border-radius: 50px;
+    padding: 15px;
+}
+
 /* Main */
 
 /* Footer */
