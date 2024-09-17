@@ -15,6 +15,59 @@ html {
 /* Header */
 
 /* Main */
+/* Block-2*/
+
+.block2_title {
+font-family: Gilroy-Black;
+font-size: 30px;
+font-weight: 400;
+line-height: 40.33px;
+letter-spacing: -0.02em;
+text-align: left;
+}
+
+.block2_card {
+    justify-content: center;
+display: flex;
+align-items:  center;
+
+}
+.price1 { justify-content: start;
+    display: flex;   
+    align-items:center;
+    width: 80vw;
+    height: 80vh;
+    background-image: url("/assets/images/block2.1.svg");
+    background-size: cover;
+    background-position: center;
+
+}
+.price2{justify-content: end;
+    display: flex;   
+    align-items:center;
+    width: 80vw;
+    height: 80vh;
+    background-image: url("/assets/images/block2.2.svg");
+    background-size:cover ;
+    background-position: center;
+}
+
+.price3{
+    width: 80vw;
+    height: 80vh;
+    background-image: url("/assets/images/block2.3.svg");
+    background-size:cover ;
+    background-position: center;
+}
+
+.price4{
+    width: 80vw;
+    height: 80vh;
+    background-image: url("/assets/images/block2.4.svg");
+    background-size:cover ;
+    background-position: center;
+}
+
 
 /* Footer */
 
