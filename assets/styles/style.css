@@ -17,6 +17,7 @@ html {
 /* Main */
 /* Block-2*/
 
+
 .block2_title {
 font-family: Gilroy-Black;
 font-size: 30px;
@@ -84,6 +85,9 @@ align-items:  center;
   display: grid;
   grid-column: 1/3;
   grid-row: 1/2;
+  color: #FF0000;
+  font: Gilroy-black;
+  font-weight: bold;
 }
 
 .banner1{
