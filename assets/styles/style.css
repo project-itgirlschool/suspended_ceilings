@@ -10,6 +10,9 @@ html {
 /* Header */
 
 /* Main */
+.block2_desc {
+    display: none;
+}
 /*.block2_title {
     font-family: Gilroy-Black;
     font-weight: 500px;
@@ -19,10 +22,6 @@ html {
     letter-spacing: -0.02em;
     text-align: left;
     }*/
-
-    .block2_desc {
-        display: none;
-    }
     /*
     .block2_card {
         justify-content: center;
@@ -68,7 +67,7 @@ html {
 /* Footer */
 
 /* Медиазапросы */
-@media screen and (min-width:760px)and(max-width:2560px) 
+@media screen and (min-width:500px)and(max-width:1400px) 
 {
 .block2_card {
     display: none;
