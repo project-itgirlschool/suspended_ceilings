@@ -1,4 +1,9 @@
 /* Шрифты */
+@font-face {
+    src: url("../fonts/gilroy-black.ttf");
+    font-family: "Gilroy-Black";
+}
+
 a {
     text-decoration: none;
 }
