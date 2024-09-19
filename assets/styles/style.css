@@ -17,5 +17,22 @@ html {
 /* Main */
 
 /* Footer */
+.contact_info_footer{
+    font-size: 24px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+.number_footer{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 27px;
+    margin-left: 35px;
+    margin-bottom: 13px;
+}
+.number_footer_2{
 
+}
 /* Медиазапросы */
