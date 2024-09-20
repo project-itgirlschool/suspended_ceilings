@@ -3,6 +3,10 @@
     src: url("../fonts/montserrat-regular.ttf");
     font-family: "Montserrat";
 }
+@font-face {
+    src: url("../fonts/gilroy-black.ttf");
+    font-family: "Gilroy-Black";
+}
 
 html {
     font-family: "Montserrat", sans-serif;
