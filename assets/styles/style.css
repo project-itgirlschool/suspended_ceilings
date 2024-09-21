@@ -1,4 +1,4 @@
-/* Шрифты */
+
 @font-face {
     src: url("../fonts/montserrat-regular.ttf");
     font-family: "Montserrat";
@@ -88,9 +88,6 @@ html {
 }
 
 
-/* Footer */
-
-/* Медиазапросы */
 @media screen and (min-width:1025px) {
     .block3{
         width: 100%;
