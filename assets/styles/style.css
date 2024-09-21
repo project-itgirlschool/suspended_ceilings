@@ -365,3 +365,51 @@ height: 512px;
 margin-top: 130px;
 }
 }
+/*отзывы*/
+.reviews {
+    width: 100%;
+}
+.reviews__title {
+    font-family: "Gilroy-Black";
+    font-size: 2rem;  /* 32px */
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
+
+.reviews__carousel {
+    width: 300px;
+    height: 230px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews__carousel_pic {
+    width: 200px;
+    height: 230px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    margin: 0 25px;
+}
+
+.reviews__carousel_btn {
+    transition: all 400ms ease;
+}
+
+.reviews__carousel_btn:hover {
+    transform: scale(0.9);
+}
+
+.reviews__carousel_pic {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.reviews__carousel_pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
