@@ -86,8 +86,7 @@ align-items:  center;
   grid-column: 1/3;
   grid-row: 1/2;
   color: #FF0000;
-  font: Gilroy-black;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .banner1{
@@ -143,6 +142,8 @@ align-items:  center;
     display: grid;
     grid-column: 1/3;
     grid-row: 1/2;
+    font: Gilroy-black;
+    font-weight: bold;
 }
 
 
