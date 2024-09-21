@@ -6,38 +6,48 @@ a {
 
 /* Header */
 header {
-    padding: 10px 16px 8px 16px;
+    padding: 10px 10px 8px 10px;
+    align-items: center;
 }
 .header-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-} 
-header>.messengers>.logo-messenger {
+    align-items: center;
+}
+.header-flex-vertical {
+    display: flex;
+    flex-direction: column;
+}
+header>.messengers>a>.logo-messenger {
     width: 35px;
+}
+.whatsapp {
+    margin: 0px 10px 0px 5px;
 }
 header>.logo-site {
     width: 50px;
-    margin: auto;
-    padding-left: 13px;
 }
-header>.messengers {
-    width: 85px;
-    position: absolute;
-    top: 23px;
-    left: 16px;
+header>a>.icon-phone {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+header>a.call>div>p {
+    margin: 0px;
 }
 .menu-button {
     display: flex;
     align-items: center;
     position: absolute;
     top: 28px;
-    right: 16px;
+    right: 10px;
     width: 30px;
     height: 25px;
     cursor: pointer;
     z-index: 1;
 }
+
 .menu-button>span, .menu-button>span::before, .menu-button>span::after {
     display: block;
     position: absolute;
@@ -158,15 +168,18 @@ nav.menu-list-adaptive {
     .video_for_computer_vers {
         display: block;
     }
-    header>.messengers>.logo-messenger {
+    header>.messengers>a>.logo-messenger {
         width: 65px;
     }
     header>.logo-site {
         width: 90px;
+        margin-left: 13px;
+        margin: auto;
     }
     header>.messengers {
         width: 150px;
-        top: 45px;
+        position: absolute;
+        top: 40px;
         left: 30px;
     }
     .menu-button {
@@ -190,12 +203,23 @@ nav.menu-list-adaptive {
         padding: 160px 0px 0px 0px;
         height: calc(100% - 160px);
     }
+    .menu-title {
+        padding: 10px 25px;
+        margin: 0px 0px 10px 0px;
+        font-size: 40px;
+    }
+    .menu-element {
+        padding: 6px 6px;
+        width: 240PX;
+        font-size: 20px;
+
+        margin: 10px 24px;
+    }
     .button_from_header {
-        bottom: 15px;
-        left: 700px;
-        right: 30px;
-        width: 300px;
-        font-size: 25px;
+        display: none;
+    }
+    header>a.call {
+        display: none;
     }
 }
 @media screen and (min-width: 1100px) {
@@ -221,7 +245,7 @@ nav.menu-list-adaptive {
         margin-right: 20px;
     }
     
-    header>.messengers>.logo-messenger {
+    header>.messengers>a>.logo-messenger {
         width: 65px;
         margin-left: 18px;
     }
@@ -237,7 +261,7 @@ nav.menu-list-adaptive {
     }
     .button_from_header  {
         position: static;
-        order: 2;
+        display: block;
         width: 180px;
         padding: 18px 22px;
     }
