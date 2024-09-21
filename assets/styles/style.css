@@ -15,6 +15,236 @@ font-family: "Montserrat", sans-serif;
 /* Header */
 
 /* Main */
+.block5 {
+    width: 100%;
+    height:100% ;
+    background-color: rgba(0, 65, 77, 1);
+}
+
+h2 {
+    color: white;
+    font-family: "Gilroy--Black";
+    font-size: 24px;
+    margin-left: 15px;
+    margin-right: 35px;
+}
+
+.block5_title {
+    padding-top: 30px;
+    width: 85vw;
+    height: auto;
+}
+
+ul.svg-ticks li::before {
+    content: url(/suspended_ceilings/assets/images/tick.svg);
+    padding-right: - 10px; 
+    width: 20px; 
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.block5_desc {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 36px;
+    margin-right: 40px;
+    padding: 10px;
+}
+
+
+.text2 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 13px;
+    margin-right: 16px;
+    margin-top: 10px;
+}
+
+.form_text {
+    margin: 15px;
+    margin-left: 36px;
+    font-family: "Montserrat";
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+
+}
+.form { 
+    margin-top: 30px;
+}
+
+.form__input {
+    border-radius: 50px;
+    width: 300px;
+    height: 30px; 
+}
+.block5_btn{
+    color: white;
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+    justify-content: center;
+}
+.button_order {
+    color:white;
+    border-radius: 50px;
+    background-color: rgba(15, 141, 166, 1); 
+    width: 328px;
+    height: 50px;
+    margin-top: 24px ;
+    margin-left:25px;
+
+}
+
+/ .block5_btn:hover{
+    background-color: rgba(15, 141, 166, 1); 
+    color:white;
+} 
+
+.politics {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 10px;
+    margin-top: 20px;
+    margin-left: 35px;
+    margin-right: 10px;
+    margin-bottom: 45px;
+    padding-bottom:50px;
+}
+@media screen and (min-width: 500px) {
+}
+ .mt-3 form {
+    justify-content: center;
+ }
+}
+
+@media screen (min-width: 550px) {
+    .block5_title {
+        text-align: center; 
+        margin-left: auto;
+        margin-right: auto;}
+
+     ul.svg-ticks li::before {
+        display:flex;
+        justify-content: center;
+    }
+h2 { 
+    width: 200px;
+    font-size: 30px;
+    text-align: center; 
+    white-space: nowrap;
+    justify-content: center;
+}
+}
+
+@media screen and (min-width: 1024px) {
+    .block5_title {
+        width: 623px;
+        height: 106px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px; 
+    }
+    h2 { text-align: center;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%; /* 52.8px */
+        letter-spacing: -0.96px;
+    }   
+
+    .block5_desc  {
+        width: 870px;
+        height: 67px;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text2 {
+        width: 430px;
+        font-size: 20px;
+        line-height: normal;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .col-11{
+        margin-left: 25%;
+    }
+    .form__input{
+        width: 460px;
+        height: 46px;
+    }
+    
+    .button_order {
+        display: flex;
+        width: 425px;
+        height: 100px;
+        padding: 10px;
+        justify-content: center; 
+        align-items: center; 
+        gap: 10px;
+        font-family: Gilroy-Black;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 55px;
+    }
+    .politics {
+        width: 560px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 0px;
+        margin-bottom: 90px;
+    }
+    
+}
+@media screen and (min-width: 1250px) {
+    .block5_title {
+        width: 1021px;
+        margin-bottom: 0;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: center;
+
+    }
+    .col-11{
+        margin-left: 5%;
+    }
+    .block5_items {
+        margin-left: 10%;
+    }
+    .text2{
+        margin-top: 20px;
+    }
+    .mt-3 form {
+        margin-top: 20%;
+    }
+    ul.svg-ticks li::before {
+        width: 30px;
+        height: 30px;
+    }
+}
+
 .block-7{
 margin: auto 16px;
 background: rgb(255, 255, 255);
