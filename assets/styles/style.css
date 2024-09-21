@@ -1,0 +1,326 @@
+/* Шрифты */
+@font-face {
+    src: url("../fonts/montserrat-regular.ttf");
+    font-family: "Montserrat";
+}
+@font-face {
+    src: url("../fonts/gilroy-black.ttf");
+    font-family: "Gilroy-Black";
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Header */
+
+/* Main */
+/* Block-2*/
+
+
+.block2_title {
+font-family: Gilroy-Black;
+font-size: 30px;
+font-weight: 400;
+line-height: 40.33px;
+letter-spacing: -0.02em;
+text-align: left;
+}
+
+.block2_card {
+    justify-content: center;
+display: flex;
+align-items:  center;
+
+}
+.price1 { justify-content: start;
+    display: flex;   
+    align-items:center;
+    width: 80vw;
+    height: 80vh;
+    background-image: url("/assets/images/block2.1.svg");
+    background-size: cover;
+    background-position: center;
+
+}
+.price2{justify-content: end;
+    display: flex;   
+    align-items:center;
+    width: 80vw;
+    height: 80vh;
+    background-image: url("/assets/images/block2.2.svg");
+    background-size:cover ;
+    background-position: center;
+}
+
+.price3{
+    width: 80vw;
+    height: 80vh;
+    background-image: url("/assets/images/block2.3.svg");
+    background-size:cover ;
+    background-position: center;
+}
+
+.price4{
+    width: 80vw;
+    height: 80vh;
+    background-image: url("/assets/images/block2.4.svg");
+    background-size:cover ;
+    background-position: center;
+}
+
+/*block3*/
+
+.block3{
+    width: 360px;
+}
+.stock{
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 20% 60% 1fr;
+
+}
+
+.stock h2{
+  display: grid;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  color: #FF0000;
+  font-weight: 900;
+}
+
+.banner1{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    
+}
+.banner2{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/3
+    
+}
+
+#left{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 39px;
+    height: 41px;
+    border: none;
+    background-image:url('../images/block3/batton_left.svg');
+    background-size: cover;
+    margin-left: 70%;
+
+}
+#right{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 39px;
+    height: 41px;
+    border: none;
+    background-image:url('../images/block3/batton_right.svg');
+    background-size: cover;
+    margin-left: 10%;
+}
+
+.advantages{
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: repeat(25% 4); 
+    margin: 1rem;
+
+
+}
+.advantages h2{
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font: Gilroy-black;
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+/* Медиазапросы */
+@media screen and (min-width:1025px) {
+    .block3{
+        width: 100%;
+    }
+    .stock{
+        display: grid;
+        grid-template-columns: 30% 30% 1fr;
+        grid-template-rows: 10% 85% 1fr;
+    
+    }
+    
+    .stock h2{
+      display: grid;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      color: #FF0000;
+      font-weight: 900;
+      font-size: 48px;
+      justify-items: center;
+    }
+    
+    .banner1{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-column: 1/4;
+        grid-row: 2/3;
+        
+    }
+    .banner2{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-column: 1/4;
+        grid-row: 2/3
+        
+    }
+    
+    #left{
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        width: 39px;
+        height: 41px;
+        border: none;
+        background-image:url('../images/block3/batton_left.svg');
+        background-size: cover;
+        margin-right: 30%;
+    
+    }
+    #right{
+        display: grid;
+        grid-column: 3/4;
+        grid-row: 3/4;
+        width: 39px;
+        height: 41px;
+        border: none;
+        background-image:url('../images/block3/batton_right.svg');
+        background-size: cover;
+        margin-left: 10%;
+    }
+
+    .advantages{
+        display: grid;
+        grid-template-columns: 33% 33% 1fr;
+        grid-template-rows: repeat(33% 3); 
+        margin: 1rem;
+    
+        }
+
+    .advantages h2{
+        display: grid;
+        grid-column: 1/4;
+        grid-row: 1/2;
+        font: Gilroy-black;
+        font-weight: bold;
+        font-size: 48px;
+    }
+    .img_advantages{
+        display: grid;
+        justify-items: center;
+        margin-left: 3rem;
+        width: 70%;
+        height: 70%;
+    }
+
+}
+
+@media screen and (min-width:371px) and (max-width:1024px) {
+    .block3{
+        width: 100%;
+    }
+    .stock{
+        display: grid;
+        grid-template-columns: 30% 30% 1fr;
+        grid-template-rows: 15% 70% 1fr;
+    
+    }
+    
+    .stock h2{
+      display: grid;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      color: #FF0000;
+      font-weight: 900;
+      font-size: 36px;
+      justify-items: center;
+    }
+    
+    .banner1{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-column: 1/4;
+        grid-row: 2/3;
+        
+    }
+    .banner2{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-column: 1/4;
+        grid-row: 2/3
+        
+    }
+    
+    #left{
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        width: 39px;
+        height: 41px;
+        border: none;
+        background-image:url('../images/block3/batton_left.svg');
+        background-size: cover;
+        margin-left: 20%;
+    
+    }
+    #right{
+        display: grid;
+        grid-column: 3/4;
+        grid-row: 3/4;
+        width: 39px;
+        height: 41px;
+        border: none;
+        background-image:url('../images/block3/batton_right.svg');
+        background-size: cover;
+        margin-left: 10%;
+    }
+
+    .advantages{
+        display: grid;
+        grid-template-columns: 33% 33% 1fr;
+        grid-template-rows: repeat(33% 3); 
+        margin: 1rem;
+    
+        }
+
+    .advantages h2{
+        display: grid;
+        grid-column: 1/4;
+        grid-row: 1/2;
+        font: Gilroy-black;
+        font-weight: bold;
+        font-size: 48px;
+    }
+    .img_advantages{
+        display: grid;
+        justify-items: center;
+        margin-left: 3rem;
+        width: 70%;
+        height: 70%;
+    }
+}
