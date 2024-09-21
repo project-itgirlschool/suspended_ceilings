@@ -15,6 +15,82 @@ font-family: "Montserrat", sans-serif;
 /* Header */
 
 /* Main */
+
+.work-examples__title {
+    font-family: "Gilroy-Black";
+    font-size: 32px; 
+    font-weight: 400;
+    line-height: 40px;
+    margin-left: 16px;
+    margin-bottom: 30px;
+}
+.work-examples__carousel_card {
+    width: 360px;
+    height: 531px;
+    font-family: 'Montserrat';
+    background-color: #DDEFF3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items:center;
+    padding: 16px;
+    margin: 0 auto;
+
+    @media screen and (min-width:1024px) {
+        width:602px;
+        height: 726px;
+    }
+}
+.carousel_card_pic {
+    width: 328px;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.carousel_card_text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.carousel_card_text_main{
+    width: 160px;
+}
+.carousel_card_text_done{
+    font-size: 12px;
+    width: 117px;
+}
+.work-examples__carousel_btns {
+    width: 104px;
+    height: 41px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+.work-examples__carousel_btn {
+    position: relative;
+    @media screen and (min-width:1024px) {
+        position:absolute
+    }
+}
+.work-examples__carousel_card .main_example {
+    width: 328px;
+    height: 166px;
+    border-radius: 10px;
+    background-color: #B2B2B2;
+}
+.work-examples__carousel_card .second_example {
+    display: flex;
+    justify-content: space-around;
+}
+.work-examples__carousel_card .second_example div{
+    width: 160px;
+    height: 140px;
+    border-radius: 10px;
+    background-color: #B2B2B2;
+}
 .block-7{
 margin: auto 16px;
 background: rgb(255, 255, 255);
