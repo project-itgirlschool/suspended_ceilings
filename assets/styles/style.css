@@ -186,10 +186,6 @@ nav.menu-list-adaptive {
 
 /* Main */
 
-.block-2 {
-    width: 100vw;
-    height: 100vh
-}
 
 .bl2_title {
     font-family: "Gilroy-Black";
@@ -245,6 +241,7 @@ nav.menu-list-adaptive {
 
 .bl2_option,
 .desc_option {
+    font-family: "Gilroy-Black";
     font-size: 36px;
 }
 
@@ -1055,7 +1052,7 @@ height: 420px;
         display: grid;
         grid-column: 1/4;
         grid-row: 1/2;
-        font: Gilroy-black;
+        font-family: 'Gilroy-Black';
         font-weight: bold;
         font-size: 50px;
         font-weight: 900;
@@ -1147,11 +1144,10 @@ height: 420px;
         display: grid;
         grid-column: 1/4;
         grid-row: 1/2;
-        font: Gilroy-black;
         font-weight: bold;
         font-size: 48px;
         margin: 2%;
-        font: Gilroy-black;
+        font-family: 'Gilroy-Black';
     }
 
     .img_advantages {
