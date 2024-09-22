@@ -737,7 +737,7 @@ button:hover {
 .stock {
     display: grid;
     grid-template-columns:1fr;
-    grid-template-rows: 15% 70% 1fr;
+    grid-template-rows: 10% 75% 1fr;
 
 }
 
@@ -765,6 +765,7 @@ button:hover {
     /* grid-column: 1/3; */
     grid-row: 2/3
 }
+
 .stock_btns {
     display: grid;
     /* grid-column: 1/2; */
@@ -817,7 +818,7 @@ button:hover {
     .stock {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 10% 75% 1fr;
+        grid-template-rows: 10% 85% 1fr;
 
     }
 
@@ -831,7 +832,9 @@ button:hover {
         margin-left: 3%;
     }
 
-    
+    .carousel{
+        display: grid;
+    }
 .banner1 {
     width: 100%;
    display: grid;
@@ -839,11 +842,12 @@ button:hover {
 
 }
 
-
 .banner2 {
     width: 100%;
+    height: 100%;
     display: grid;
-    grid-row: 2/3
+    grid-row: 2/3;
+    overflow: hidden;
 }
 .stock_btns {
     display: grid;
@@ -929,13 +933,9 @@ button:hover {
 
 }
 
-.carousel-item img{
-    height: 40vh;
-}
-
 .banner2 {
     width: 100%;
-    height: ;
+    height:100% ;
     display: grid;
     
     grid-row: 2/3
