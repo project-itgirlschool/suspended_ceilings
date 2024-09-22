@@ -19,8 +19,7 @@ html {
     height: 100vh
 }
 
-.bl2_title,
-.bl2_desc {
+.bl2_title {
     font-family: Gilroy-Black;
     font-size: 32px;
     font-weight: 900;
@@ -72,19 +71,21 @@ html {
   justify-content: center;
 }
 
-.bl2_option {
+.bl2_option,
+.desc_option  {
     font-size: 36px;
 
 }
-
-.bl2_price {
+.bl2_price, 
+.desc_price {
     font-size: 32px;
     color: rgba(0, 65, 77, 1);
 }
-.bl2_option,
-.bl2_price {
-    font-weight: bold;
+.bl2_feature,
+.desc_feature {
+    font-family: auto;
 }
+
 .bl2_option,
 .bl2_price,
 .bl2_feature {
@@ -95,7 +96,9 @@ html {
 .bl2_desc {
   display: none;
   padding: 8%;
-  font-size: 48px;
+}
+.desc_title{
+    font-size: 48px;
 }
 
 .bl2_desc_all_cards {
@@ -136,25 +139,6 @@ html {
 .desc_card5 {
     background-image: url(/assets/images/bl2_desc_5.png);
 }
-
-.desc_option {
-    font-size: 36px;
-}
-
-.desc_price {
-    font-size: 32px;
-    color: rgba(0, 65, 77, 1);
-
-}
-
-.desc_option,
-.desc_price {
-    font-weight: bold;
-   
-}
-
-
-
 
 /* Footer */
 
