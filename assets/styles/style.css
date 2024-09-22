@@ -100,8 +100,8 @@ header>a.call>div>p {
     left: -100%;
     width: 80%;
     margin: 0;
-    padding: 79px 0px 0px 0px;
-    height: calc(100% - 79px);
+    padding: 10px 0px 0px 0px;
+    height: 100%;
     list-style: none;
     background-color: #D9D9D950;
     transition-duration: .25s;
@@ -312,6 +312,11 @@ nav.menu-list-adaptive {
     margin-bottom: 20px;
     margin-left: 16px;
     margin-right: 16px;
+}
+
+button:hover {
+    transform: scale(0.9);
+    transition: all 400ms ease;
 }
 
 .messengers_footer {
