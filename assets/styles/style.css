@@ -29,7 +29,10 @@ html {
 .bl2_card1,
 .bl2_card3,
 .bl2_card2,
-.bl2_card4 {
+.bl2_card4,
+.bl2_card5
+ {  
+    display: flex;
     flex-direction: column;
     margin: 0;
     margin-top: 0;
@@ -41,25 +44,32 @@ html {
 
 .bl2_card1 {
     background-image: url("/assets/images/block2.1.png");
-    display: flex;
-    justify-content: center;
-}
 
-.bl2_card3 {
+}
+.bl2_card2{
+    background-image: url(/assets/images/block2.2.png);
+}
+.bl2_card3{
     background-image: url("/assets/images/block2.3.png");
 }
+.bl2_card4{
+    background-image: url(/assets/images/block2.4.png);
+}
+
+.bl2_card5 {
+    background-image: url(/assets/images/block2.5.png);
+}
+
 .bl2_card1,
-.bl2_card3{
-    display: flex;
+.bl2_card3,
+.bl2_card5 {
     justify-content: center;
 }
 
 .bl2_card2,
 .bl2_card4 {
-  display: flex;
   align-items: end;
   justify-content: center;
-  background-image: url("/assets/images/block2.2.png");
 }
 
 .bl2_option {
@@ -71,7 +81,6 @@ html {
     font-size: 32px;
     color: rgba(0, 65, 77, 1);
 }
-
 .bl2_option,
 .bl2_price {
     font-weight: bold;
@@ -97,7 +106,8 @@ html {
 .desc_card1,
 .desc_card2,
 .desc_card3,
-.desc_card4 {
+.desc_card4,
+.desc_card5 {
     background-size: cover;
     background-position: center;
     display: flex;
@@ -108,18 +118,23 @@ html {
   }
 
   .desc_card1 {
-    background-image: url(/assets/images/bl2_desc1.jpg);
+    background-image: url(/assets/images/bl2_desc_1.png);
    
 }
 
-.desc_card2,
-.desc_card3 {
+.desc_card2 {
     background-image: url(/assets/images/block2.2.png);
+}
+.desc_card3 {
+    background-image: url(/assets/images/bl2_desc_3.png);
   }
 
 
 .desc_card4 {
-    background-image: url(/assets/images/bl2_desc4.jpg);
+    background-image: url(/assets/images/block2.4.png);
+}
+.desc_card5 {
+    background-image: url(/assets/images/bl2_desc_5.png);
 }
 
 .desc_option {
@@ -171,8 +186,8 @@ html {
         grid-template-rows: 1fr 1fr;
     }
 
-    .desc_card1, .desc_card2, .desc_card3, .desc_card4 {
-        width: 450px;
+    .desc_card1, .desc_card2, .desc_card3, .desc_card4, .desc_card5  {
+        width: 400px;
         height: 420px;
     
     }
