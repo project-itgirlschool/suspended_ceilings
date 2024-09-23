@@ -186,11 +186,13 @@ nav.menu-list-adaptive {
 
 /* Main */
 
-
-.bl2_title {
+.bl2_title,
+.desc_title {
     font-family: "Gilroy-Black";
+}
+
+.bl2_title{
     font-size: 32px;
-    font-weight: 900;
 }
 
 .bl2_card1,
@@ -241,19 +243,20 @@ nav.menu-list-adaptive {
 
 .bl2_option,
 .desc_option {
-    font-family: "Gilroy-Black";
+    font-family:"Gilroy-Black";
     font-size: 36px;
 }
 
 .bl2_price, 
 .desc_price {
+  font-family:"Gilroy-Black";
     font-size: 32px;
     color: rgba(0, 65, 77, 1);
 }
 
 .bl2_feature,
 .desc_feature {
-    font-family: auto;
+    font-family:"Montserrat";
 }
 
 .bl2_option,
