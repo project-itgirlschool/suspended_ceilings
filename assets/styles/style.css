@@ -1355,19 +1355,22 @@ h2 {
         height: 53px;
         margin-bottom: 0;
         margin-left: 100px;
+        margin-bottom: 40px;
     }
+    
     .block5_desc{
         margin-left: 140px;
+        margin-bottom: 30px;
     }
     .wrapper {
         display: flex;
 
     }
     .block5_items {
-        margin-left: 105px;
+        margin-left: 110px;
     }
     .text2{
-        margin-top: 20px;
+        margin-top: 30px;
     }
     .mt-3 form {
         margin-top: 20%;
