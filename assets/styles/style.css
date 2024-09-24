@@ -1,8 +1,21 @@
 /* Шрифты */
+@font-face {
+src: url("../fonts/montserrat-regular.ttf");
+font-family: "Montserrat";
+}
+@font-face {
+src: url("../fonts/gilroy-black.ttf");
+font-family: "Gilroy-Black";
+}
+
+html {
+font-family: "Montserrat", sans-serif;
+  }
+
 a {
     text-decoration: none;
     color: #000000;
-}
+  }
 
 /* Header */
 header {
@@ -154,9 +167,155 @@ nav.menu-list-adaptive {
     display: none;
 }
 
+.block-7{
+margin: auto 16px;
+background: rgb(255, 255, 255);
+}
+.title-blc7{
+width: 207px;
+height: 80px;
+font-family: "Gilroy-Black";
+font-size: 2rem;  /* 32px */
+font-weight: 400;
+line-height: 40px;
+margin-bottom: 40px;
+}
+.faq-item{
+max-width: 328px;
+box-shadow: -5px 5px 15px 0px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+margin-bottom: 15px;
+display: flex;
+flex-flow: row wrap;
+align-items: center;
+justify-content: space-between;
+}
+.faq-title{
+font-family: "Gilroy-Black";
+font-size: 14px;
+font-weight: 400;
+padding-left: 20px;
+padding-top: 14px;
+padding-bottom: 14px;
+width: 75%;
+display: block;
+cursor:pointer;
+}
+.faq-input{
+appearance: none;
+padding-top: 11px;
+padding-bottom: 11px;
+padding-right: 17px;
+cursor:pointer;
+}
+.faq-text{
+display: none;
+font-family: "Montserrat";
+font-size: 13px;
+width: 90%;
+padding-left: 21px;
+padding-bottom: 21px;
+padding-right: 21px;
+box-sizing: content-box;
+}
+/* Свойство описывающее появление текста */
+.faq-input:checked + .faq-text{
+display: block;
+}
+/* Свойство описывающее замену картинок */
+.faq-input:before {
+content: url('../images/logo/block7_before_plus.svg');
+width: 40px;
+height: 40px;
+}
+.faq-input:checked:before {
+content: url('../images/logo/block7_after_plus.svg');
+width: 40px;
+height: 40px;
+}
+
+.map{
+width:100%;
+height: 406px;
+margin-top: 34px;
+}
 
 /* Footer */
+.contact_info_footer{
+font-size: 24px;
+font-weight: 900;
+display: flex;
+justify-content: center;
+margin-top: 70px;
+}
+.number_footer{
+font-family: "Montserrat", sans-serif;
+font-size: 14px;
+font-weight: 400;
+margin-top: 27px;
+margin-left: 35px;
+margin-bottom: 13px;
+}
+.number_footer_2{
+font-family: "Gilroy-Black";
+font-size: 16px;
+margin-top: 13px;
+margin-left: 36px;
+margin-bottom: 20px;
+}
+.button_footer{
+border: none;
+background-color: #0F8DA6;
+color: #FFFFFF;
+border-radius: 50px;
+padding: 15px;
+width: 328px;
+height: 51px;
+margin-bottom: 20px;
+margin-left: 16px;
+margin-right: 16px;
+}
+.messengers_footer{
+font-size: 14px;
+font-weight: 400;
+margin-left: 36px;
+margin-bottom: 10px;
+}
+.display_footer{
+display: grid;
+grid-template-columns: 2fr;
+grid-template-areas: "a b"; 
+}
+.display_footer_2{
+grid-area: "a";
+}
+.logo_footer{
+width: 96px;
+height: 118px;
+margin-right: 16px;
+grid-area: "b";
+}
+.messengers_logo_footer{
+display: flex;
+justify-content: space-evenly;
+margin-left:36px ;
+margin-bottom: 20px;
+width: 147px;
+height: 43px;
+}
 
+.hours{
+font-size: 14px;
+margin-left:36px ;
+margin-bottom: 20px;
+font-weight: 400;
+}
+.hours_2{
+font-family: "Gilroy-Black";
+font-size: 16px;
+margin-left:36px ;
+margin-bottom: 88px;
+}
 /* Медиазапросы */
 @media screen and (min-width: 450px) {
     header {
@@ -265,4 +424,204 @@ nav.menu-list-adaptive {
         width: 180px;
         padding: 18px 22px;
     }
+}
+@media screen and (min-width:371px) and (max-width:1024px) {
+.contact_info_footer{
+font-size: 48px;
+font-weight: 900;
+display: flex;
+justify-content: center;
+margin-top: 70px;
+margin-bottom: 50px;
+}
+.number_footer{
+font-family: "Montserrat", sans-serif;
+font-size: 36px;
+font-weight: 400;
+margin-left: 24px;
+margin-bottom: 30px;
+}
+.number_footer_2{
+font-family: "Gilroy-Black";
+font-size: 24px;
+margin-left: 24px;
+margin-bottom: 30px;
+}
+.button_footer{
+margin-bottom: 50px;
+margin-left: 24px;
+}
+.messengers_footer{
+font-size: 36px;
+font-weight: 400;
+margin-left: 24px;
+margin-bottom: 30px;
+}
+.display_footer{
+display: grid;
+grid-template-columns: 2fr;
+grid-template-areas: "a b"; 
+}
+.display_footer_2{
+grid-area: "a";
+}
+.logo_footer{
+width: 158px;
+height: 195px;
+margin-right: 24px;
+grid-area: "b";
+}
+.messengers_logo_footer{
+display: flex;
+justify-content: space-evenly;
+margin-left:24px ;
+margin-bottom: 30px;
+width: 230px;
+height: 50px;
+}
+
+.hours{
+font-size: 24px;
+margin-left:26px ;
+margin-bottom: 30px;
+font-weight: 400;
+}
+.hours_2{
+font-family: "Gilroy-Black";
+font-size: 20px;
+margin-left:24px ;
+margin-bottom: 70px;
+}
+}
+@media screen and (min-width:1024px){
+.contact_info_footer{
+font-size: 48px;
+font-weight: 900;
+margin-top: 130px;
+display: flex;
+justify-content: center;
+}
+.number_footer{
+font-family: "Montserrat", sans-serif;
+font-size: 36px;
+font-weight: 400;
+margin-left: 140px;
+margin-bottom: 30px;
+}
+.number_footer_2{
+font-family: "Gilroy-Black";
+font-size: 24px;
+margin-left: 140px;
+margin-bottom: 30px;
+}
+.button_footer{
+margin-bottom: 50px;
+margin-left: 140px;
+}
+.messengers_footer{
+font-size: 36px;
+font-weight: 400;
+margin-left: 140px;
+margin-bottom: 30px;
+}
+.display_footer{
+display: grid;
+grid-template-columns: 2fr;
+grid-template-areas: "a b"; 
+}
+.display_footer_2{
+grid-area: "a";
+}
+.logo_footer{
+width: 158px;
+height: 195px;
+margin-right: 324px;
+grid-area: "b";
+}
+.messengers_logo_footer{
+display: flex;
+justify-content: space-evenly;
+margin-left:140px ;
+margin-bottom: 30px;
+width: 230px;
+height: 50px;
+}
+.hours{
+font-size: 24px;
+margin-left:140px ;
+margin-bottom: 30px;
+font-weight: 400;
+}
+.hours_2{
+font-family: "Gilroy-Black";
+font-size: 20px;
+margin-left:140px ;
+margin-bottom: 365px;
+}
+}
+@media screen and (min-width:375px) and (max-width:1024px) {
+.block-7{
+margin: 0;
+}
+
+.title-blc7{
+width: 519px;
+height: 61px;
+font-size: 3rem;
+line-height: 61px;
+/* margin-bottom: 49px; */
+margin:49px auto;
+}
+
+.faq{
+margin: auto 24px;
+}
+.faq-item{
+max-width: 976px;
+margin-bottom: 30px;
+justify-content: space-between;
+}
+.faq-title{
+font-size: 1.5rem;
+padding-left: 30px;
+padding-top: 16px;
+padding-bottom: 16px;
+}
+.faq-text{
+font-size: 22px;
+width: 90%;
+padding-left: 35px;
+}
+.map{
+height: 512px;
+margin-top: 70px;
+}
+}
+@media screen and (min-width:1025px) {
+.block-7{
+margin: auto 140px;
+}
+.title-blc7{
+width: 519px;
+height: 61px;
+font-size: 3rem;
+margin-bottom: 90px;
+}
+.faq-item{
+max-width: 80vw;
+}
+.faq-title{
+font-size: 24px;
+padding-left: 35px;
+width: 90%;
+}
+.faq-text{
+font-size: 22px;
+width: 90%;
+padding-left: 40px;
+}
+.map{
+height: 512px;
+margin-top: 130px;
+}
 }
