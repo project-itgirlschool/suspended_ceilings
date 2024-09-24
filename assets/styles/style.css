@@ -9,9 +9,8 @@
 }
 
 html {
-  font-family: "Gilroy-Black";
+  font-family: "Montserrat", sans-serif;
 }
-
 
 a {
     text-decoration: none;
@@ -30,35 +29,30 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
-.header-flex-vertical {
-    display: flex;
-    flex-direction: column;
+header>.messengers {
+    width: 85px;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    z-index: 1;
 }
 
 header>.messengers>a>.logo-messenger {
     width: 35px;
 }
-
-.whatsapp {
-    margin: 0px 10px 0px 5px;
-    font-family: "Montserrat", sans-serif;
-}
-
 header>.logo-site {
     width: 50px;
+    margin: auto;
+    padding-left: 13px;
 }
-
 header>a>.icon-phone {
-    width: 30px;
+    width: 33px;
     height: 30px;
-    margin-right: 5px;
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    z-index: 1;
 }
-
-header>a.call>div>p {
-    margin: 0px;
-}
-
 .menu-button {
     display: flex;
     align-items: center;
@@ -70,14 +64,11 @@ header>a.call>div>p {
     cursor: pointer;
     z-index: 1;
 }
-
-.menu-button>span,
-.menu-button>span::before,
-.menu-button>span::after {
+.menu-button>span, .menu-button>span::before, .menu-button>span::after {
     display: block;
     position: absolute;
     width: 100%;
-    height: 4px;
+    height: 5px;
     background-color: #00414D;
     border-radius: 5px;
     transition-duration: .25s;
@@ -99,39 +90,32 @@ header>a.call>div>p {
     visibility: hidden;
     top: 0;
     left: -100%;
-    width: 80%;
+    width: 86%;
     margin: 0;
-    padding: 10px 0px 0px 0px;
+    padding: 79px 0px 0px 0px;
     height: 100%;
     list-style: none;
-    background-color: #D9D9D950;
+    background-color: #00000090;
     transition-duration: .25s;
     z-index: 2;
 }
-
 .menu-title {
-    background-color: #FFFFFF;
-    padding: 10px 25px;
-    margin: 0px 0px 10px 0px;
+    margin: 10px 10px 10px 25px;
     font-family: "Gilroy-Black";
     font-size: 32px;
+    color: #FFFFFF;;
 }
-
-.menu-element {
+li.menu-element {
     display: block;
     background-color: #FFFFFF;
     border-radius: 100px;
-    padding: 6px 6px;
+    padding: 6px 15px 7px 15px;
     width: 210PX;
     box-shadow: -3px 3px 10px #00000025;
-    font-size: 14px;
     transition-duration: .25s;
     margin: 10px 24px;
-}
-
-.point_menu-element {
-    width: 10px;
-    margin-right: 10px;
+    font-family: "Gilroy-Black";
+    font-size: 14px;
 }
 
 #menu-toggle {
@@ -162,7 +146,7 @@ nav.menu-list-adaptive {
 }
 
 .menu-element-adaptive {
-    margin: 15px;
+    margin: 10px;
     font-family: "Gilroy-Black";
     font-size: 20px;
 }
@@ -181,9 +165,8 @@ nav.menu-list-adaptive {
     z-index: 1;
     width: calc(100% - 40px);
     font-family: "Gilroy-Black";
-    font-size: 20px;
+    font-size: 18px;
 }
-
 /* Main */
 
 .bl2_title,
@@ -540,13 +523,11 @@ height: 420px;
 
 @media screen and (min-width: 450px) {
     header {
-        padding: 25px 30px;
+        padding: 20px 30px 15px 30px;
     }
-
     .video_for_mobile_vers {
         display: none;
     }
-
     .video_for_computer_vers {
         display: block;
     }
@@ -575,11 +556,9 @@ height: 420px;
         right: 30px;
     }
 
-    .menu-button>span,
-    .menu-button>span::before,
-    .menu-button>span::after {
+    .menu-button>span, .menu-button>span::before, .menu-button>span::after {
         width: 100%;
-        height: 8px;
+        height: 9px;
         border-radius: 5px;
     }
 
@@ -592,22 +571,20 @@ height: 420px;
     }
 
     .menu-list {
-        padding: 160px 0px 0px 0px;
-        height: calc(100% - 160px);
+        padding: 145px 0px 0px 0px;
+        height: 100%;
+        width: 80%;
     }
 
     .menu-title {
-        padding: 10px 25px;
-        margin: 0px 0px 10px 0px;
+        margin: 5px 0px 5px 31px;
         font-size: 40px;
     }
-
-    .menu-element {
-        padding: 6px 6px;
+   li.menu-element {
+        padding: 7px 15px 8px 15px;
         width: 240PX;
         font-size: 20px;
-
-        margin: 10px 24px;
+        margin: 10px 30px;
     }
 
     .button_from_header {
@@ -642,23 +619,24 @@ height: 420px;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-right: 20px;
+        margin-right: 10px;
     }
-
     header>.messengers>a>.logo-messenger {
         width: 65px;
+    }
+    a.space_for_messenger {
         margin-left: 18px;
     }
 
     header>.messengers {
         position: static;
         width: 180px;
-        height: 150px;
+        height: 145px;
         order: 1;
         display: flex;
         justify-content: flex-end;
         flex-wrap: wrap;
-        align-content: space-around;
+        align-content: space-between;
     }
 
     .button_from_header {
