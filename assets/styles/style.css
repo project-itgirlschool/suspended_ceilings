@@ -167,7 +167,210 @@ nav.menu-list-adaptive {
     font-family: "Gilroy-Black";
     font-size: 18px;
 }
-/* Main */
+.work-examples {
+    margin-bottom: 130px;
+}
+#carouselExampleDesktop {
+    display:none;
+    @media screen and (min-width:1440px) {
+        display: block;
+    }
+}
+
+#carouselReview {
+    @media screen and (min-width:1440px) {
+        display: none;
+    }
+}
+
+.desktop_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.desktop_card .work-examples__carousel_card {
+    width: 490px;
+    height: 600px;
+    margin: 20px;
+}
+.work-examples__title {
+    font-family: "Gilroy-Black";
+    font-size: 32px; 
+    font-weight: 400;
+    line-height: 40px;
+    margin-left: 16px;
+    margin-bottom: 30px;
+    @media screen and (min-width:1024px) {
+        text-align: center;
+        font-size: 48px; 
+    }
+
+  
+}
+ 
+.work-examples__carousel_card {
+    width: 360px;
+    height: 531px;
+    font-family: 'Montserrat';
+    background-color: #DDEFF3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items:center;
+    padding: 16px;
+    margin: 0 auto;
+
+    @media screen and (min-width:1024px) {
+        width:602px;
+        height: 726px;
+        padding: 50px;
+    }
+   
+}
+
+
+.carousel_card_pic {
+    width: 328px;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (min-width:1024px) {
+        width:100%;
+        height: 502px;
+    }
+}
+.carousel_card_text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @media screen and (min-width:1024px) {
+        padding-top: 20px ;
+    }
+}
+.carousel_card_text_main{
+    width: 160px;
+
+    @media screen and (min-width:1024px) {
+        font-size: 20px;
+        width: 245px;
+    }
+}
+
+.carousel_card_text_main strong {
+    @media screen and (min-width:1024px) {
+        font-size: 28px;
+        font-weight: 400;
+        font-family: "Gilroy-Black";
+    }
+}
+.carousel_card_text_done{
+    font-size: 12px;
+    width: 117px;
+    @media screen and (min-width:1024px) {
+        font-size: 14px;
+        width: 126px;
+    }
+}
+.work-examples__carousel_btns {
+    width: 104px;
+    height: 41px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+.work-examples__carousel_btn {
+    position: relative;
+    @media screen and (min-width:1024px) {
+        position:absolute
+    }
+}
+.carousel_desktop {
+    display: flex;
+    justify-content: space-around;
+}
+.work-examples__carousel_card .main_example {
+    width: 100%;
+    height: 54%;
+    border-radius: 10px;
+    background-color: #B2B2B2;
+}
+.work-examples__carousel_card .second_example {
+    display: flex;
+    justify-content: space-around;
+
+    @media screen and (min-width:1024px) {
+        width: 100%;
+        height: 60%;
+        margin-top: 10px;
+    }
+}
+.work-examples__carousel_card .second_example div{
+    width: 160px;
+    height: 140px;
+    border-radius: 10px;
+    background-color: #B2B2B2;
+    padding-top: 10px;
+    @media screen and (min-width:1024px) {
+        width: 48%;
+        height: 100%;
+        
+    }
+}
+.block-7{
+margin: auto 16px;
+background: rgb(255, 255, 255);
+}
+.title-blc7{
+width: 207px;
+height: 80px;
+font-family: "Gilroy-Black";
+font-size: 2rem;  /* 32px */
+font-weight: 400;
+line-height: 40px;
+margin-bottom: 40px;
+}
+.faq-item{
+max-width: 328px;
+box-shadow: -5px 5px 15px 0px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+margin-bottom: 15px;
+display: flex;
+flex-flow: row wrap;
+align-items: center;
+justify-content: space-between;
+}
+.faq-title{
+font-family: "Gilroy-Black";
+font-size: 14px;
+font-weight: 400;
+padding-left: 20px;
+padding-top: 14px;
+padding-bottom: 14px;
+width: 75%;
+display: block;
+cursor:pointer;
+}
+.faq-input{
+appearance: none;
+padding-top: 11px;
+padding-bottom: 11px;
+padding-right: 17px;
+cursor:pointer;
+}
+.faq-text{
+display: none;
+font-family: "Montserrat";
+font-size: 13px;
+width: 90%;
+padding-left: 21px;
+padding-bottom: 21px;
+padding-right: 21px;
+box-sizing: content-box;
+}
 
 .bl2_title,
 .desc_title {
