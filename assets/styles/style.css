@@ -396,6 +396,7 @@ nav.menu-list-adaptive {
 
 /* Footer */
 .contact_info_footer {
+    color: #000;
     font-size: 24px;
     font-weight: 900;
     display: flex;
@@ -806,7 +807,7 @@ height: 420px;
 
 @media screen and (min-width:375px) and (max-width:1024px) {
     .block-7 {
-        margin: 0;
+        margin: auto 24px;
     }
 
     .title-blc7 {
@@ -814,14 +815,14 @@ height: 420px;
         height: 61px;
         font-size: 3rem;
         line-height: 61px;
-        margin-left: 24px;
+/*         margin-left: 24px; */
         margin-bottom: 49px;
         margin-top: 90px;
     }
 
-    .faq {
+/*     .faq {
         margin: auto 24px;
-    }
+    } */
 
     .faq-item {
         max-width: 976px;
