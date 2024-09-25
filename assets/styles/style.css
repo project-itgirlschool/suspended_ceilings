@@ -15,7 +15,32 @@ font-family: "Montserrat", sans-serif;
 /* Header */
 
 /* Main */
+.work-examples {
+    margin-bottom: 130px;
+}
+#carouselExampleDesktop {
+    display:none;
+    @media screen and (min-width:1440px) {
+        display: block;
+    }
+}
 
+#carouselExample {
+    @media screen and (min-width:1440px) {
+        display: none;
+    }
+}
+
+.desktop_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.desktop_card .work-examples__carousel_card {
+    width: 490px;
+    height: 600px;
+    margin: 20px;
+}
 .work-examples__title {
     font-family: "Gilroy-Black";
     font-size: 32px; 
@@ -23,7 +48,14 @@ font-family: "Montserrat", sans-serif;
     line-height: 40px;
     margin-left: 16px;
     margin-bottom: 30px;
+    @media screen and (min-width:1024px) {
+        text-align: center;
+        font-size: 48px; 
+    }
+
+  
 }
+ 
 .work-examples__carousel_card {
     width: 360px;
     height: 531px;
@@ -40,26 +72,55 @@ font-family: "Montserrat", sans-serif;
     @media screen and (min-width:1024px) {
         width:602px;
         height: 726px;
+        padding: 50px;
     }
+   
 }
+
+
 .carousel_card_pic {
     width: 328px;
     height: 312px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media screen and (min-width:1024px) {
+        width:100%;
+        height: 502px;
+    }
 }
 .carousel_card_text {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    @media screen and (min-width:1024px) {
+        padding-top: 20px ;
+    }
 }
 .carousel_card_text_main{
     width: 160px;
+
+    @media screen and (min-width:1024px) {
+        font-size: 20px;
+        width: 245px;
+    }
+}
+
+.carousel_card_text_main strong {
+    @media screen and (min-width:1024px) {
+        font-size: 28px;
+        font-weight: 400;
+        font-family: "Gilroy-Black";
+    }
 }
 .carousel_card_text_done{
     font-size: 12px;
     width: 117px;
+    @media screen and (min-width:1024px) {
+        font-size: 14px;
+        width: 126px;
+    }
 }
 .work-examples__carousel_btns {
     width: 104px;
@@ -75,21 +136,37 @@ font-family: "Montserrat", sans-serif;
         position:absolute
     }
 }
+.carousel_desktop {
+    display: flex;
+    justify-content: space-around;
+}
 .work-examples__carousel_card .main_example {
-    width: 328px;
-    height: 166px;
+    width: 100%;
+    height: 54%;
     border-radius: 10px;
     background-color: #B2B2B2;
 }
 .work-examples__carousel_card .second_example {
     display: flex;
     justify-content: space-around;
+
+    @media screen and (min-width:1024px) {
+        width: 100%;
+        height: 60%;
+        margin-top: 10px;
+    }
 }
 .work-examples__carousel_card .second_example div{
     width: 160px;
     height: 140px;
     border-radius: 10px;
     background-color: #B2B2B2;
+    padding-top: 10px;
+    @media screen and (min-width:1024px) {
+        width: 48%;
+        height: 100%;
+        
+    }
 }
 .block-7{
 margin: auto 16px;
