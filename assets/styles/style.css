@@ -371,7 +371,22 @@ padding-bottom: 21px;
 padding-right: 21px;
 box-sizing: content-box;
 }
-
+.block-2 {
+    margin: 70px 16px;
+    @media screen and (min-width:1024px) {
+        margin: 70px 24px;
+    }
+    @media screen and (min-width:1440px) {
+        margin-top: 180px;
+        margin-left: 140px;
+    }
+}
+.bl2_card {
+    @media screen and (min-width:500px) and (max-width:1024px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 .bl2_title,
 .desc_title {
     font-family: "Gilroy-Black";
@@ -394,6 +409,12 @@ box-sizing: content-box;
     height: 300px;
     background-size: cover;
     background-position: center;
+    @media screen and (min-width:1024px) {
+        margin: 70px 24px;
+    }
+    @media screen and (min-width:1440px) {
+        margin-top: 180px;
+    }
 }
 
 .bl2_card1 {
@@ -456,7 +477,6 @@ box-sizing: content-box;
 .bl2_desc {
   width: 1400px;
   display: none;
-  padding: 8%;
 }
 
 .desc_title{
@@ -598,6 +618,11 @@ box-sizing: content-box;
 }
 
 /* Footer */
+#contac-us {
+    @media screen and (min-width: 1440px) {
+        margin-left: 140px;
+    }
+}
 .contact_info_footer {
     color: #000;
     font-size: 24px;
@@ -694,7 +719,7 @@ button:hover {
 
 /* block2*/
 
-@media screen and (min-width:500px) and (max-width:1440px) {
+@media screen and (min-width:1024px) {
 .desc_option, .desc_price, .desc_feature {
  margin: 0;
 }
@@ -937,33 +962,29 @@ height: 420px;
         font-weight: 900;
         margin-top: 130px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .number_footer {
         font-family: "Montserrat", sans-serif;
         font-size: 36px;
         font-weight: 400;
-        margin-left: 140px;
         margin-bottom: 30px;
     }
 
     .number_footer_2 {
         font-family: "Gilroy-Black";
         font-size: 24px;
-        margin-left: 140px;
         margin-bottom: 30px;
     }
 
     .button_footer {
         margin-bottom: 50px;
-        margin-left: 140px;
     }
 
     .messengers_footer {
         font-size: 36px;
         font-weight: 400;
-        margin-left: 140px;
         margin-bottom: 30px;
     }
 
@@ -987,7 +1008,6 @@ height: 420px;
     .messengers_logo_footer {
         display: flex;
         justify-content: space-evenly;
-        margin-left: 140px;
         margin-bottom: 30px;
         width: 230px;
         height: 50px;
@@ -995,7 +1015,6 @@ height: 420px;
 
     .hours {
         font-size: 24px;
-        margin-left: 140px;
         margin-bottom: 30px;
         font-weight: 400;
     }
@@ -1003,7 +1022,6 @@ height: 420px;
     .hours_2 {
         font-family: "Gilroy-Black";
         font-size: 20px;
-        margin-left: 140px;
         margin-bottom: 365px;
     }
 }
@@ -1433,7 +1451,7 @@ li {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal
+    line-height: normal;
     justify-content: center;
 }
 .button_order {
@@ -1447,9 +1465,11 @@ li {
 
 }
 
-/ .block5_btn:hover{
+.button_order:hover{
     background-color: rgba(15, 141, 166, 1); 
     color:white;
+    transform: scale(0.9);
+    transition: all 400ms ease;
 } 
 
 .politics {
@@ -1469,7 +1489,7 @@ li {
 }
 }
 
-@media screen (min-width: 550px) {
+@media screen and (min-width: 550px) {
     .block5_title {
         text-align: center; 
         margin-left: auto;
@@ -1485,6 +1505,9 @@ h2 {
     text-align: center; 
     white-space: nowrap;
     justify-content: center;
+}
+h2.contact_info_footer {
+    width: 100%;
 }
 }
 
@@ -1502,6 +1525,7 @@ h2 {
         letter-spacing: -0.96px;
         margin-left:40px;
     }   
+
 
     .block5_desc  {
         width: 870px;
