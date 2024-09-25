@@ -361,7 +361,6 @@ nav.menu-list-adaptive {
     font-family: "Montserrat";
     font-size: 13px;
     width: 90%;
-    margin-top: 6px;
     padding-left: 21px;
     padding-bottom: 21px;
     padding-right: 21px;
@@ -840,6 +839,7 @@ height: 420px;
     .faq-text {
         font-size: 22px;
         width: 90%;
+        padding-top: 30px;
         padding-left: 30px;
         padding-bottom: 30px;
         padding-right: 30px;
@@ -879,7 +879,6 @@ height: 420px;
 
     .faq-text {
         font-size: 22px;
-        /* width: 90%; */
         padding: 30px;
     }
 
