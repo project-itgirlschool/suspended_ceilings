@@ -1,55 +1,701 @@
 <!DOCTYPE html>
-
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="shortcut icon" href="./assets/images/logo/kub_logo-icon.png" type="image/png">
     <title>Натяжные потолки</title>
 </head>
-<body>
-<header>
 
+<body>
+  <header class="header-flex">
+    <img src="./assets/images/logo/kub_logo-icon.png" alt="логотип сайта" class="logo-site">
+    <div class="messengers header-flex">
+        <a href="#" class="space_for_messenger">
+            <img src="./assets/images/for_header/telegram.png" alt="логотип телеграма" class="logo-messenger"></a>
+        <a href="#" class="space_for_messenger">
+            <img src="./assets/images/for_header/whatsapp.png" alt="логотип ватсап" class="logo-messenger"></a>
+        <button class="button_from_header">Заказать замер</button>
+    </div>
+    <a a href="tel:+79381567070"><img src="./assets/images/for_header/phone.png" alt="значок телефона" class="icon-phone"></a>
+    <div class="burger-menu">
+		<input id="menu-toggle" type="checkbox" />
+		<label class="menu-button" for="menu-toggle"><span></span></label>
+		<ul class="menu-list">
+			<li><h2 class="menu-title">Меню</h2></li>
+			<li class="menu-element"><a href="#">Цены</a></li>
+			<li class="menu-element"><a href="#">Акции</a></li>
+			<li class="menu-element"><a  href="#">Преимущества</a></li>
+			<li class="menu-element"><a href="#">Наши работы</a></li>
+			<li class="menu-element"><a href="#">Заказать замер</a></li>
+			<li class="menu-element"><a  href="#">Отзывы</a></li>
+			<li class="menu-element"><a href="#">Полезная информация</a></li>
+			<li class="menu-element"><a  href="#contacts">Контакты</a></li>
+		</ul>
+	</div>
+    <nav class="menu-list-adaptive">
+        <a href="#" class="menu-element-adaptive">Цены</a>
+        <a href="#" class="menu-element-adaptive">Акции</a>
+        <a href="#" class="menu-element-adaptive">Почему мы?</a>
+        <a href="#" class="menu-element-adaptive">Наши работы</a>
+        <a href="#" class="menu-element-adaptive">Отзывы</a>
+        <a href="#" class="menu-element-adaptive">Полезная информация</a>
+        <a href="#contacts" class="menu-element-adaptive">Контакты</a>
+    </nav>
 </header>
 <main>
+    <div class="first_block">
+         <video src="./assets/images/for_header/vertical.mp4" controls="controls" class="video_for_mobile_vers"></video>
+         <video src="./assets/images/for_header/horizontal.mov" controls="controls" class="video_for_computer_vers"></video>
+    </div>
+        <article class="block-2">
+            <h1 class="bl2_title"> Монтаж натяжных потолков </h1>
+            <div class="bl2_card">
+                <div class="bl2_card1">
+                 <p class="bl2_option"> Эконом </p> 
+                    <p class="bl2_price"> от 399 ₽/м² </p>
+                    <p class="bl2_feature"> Матовые <br> Глянцевые <br> Сатиновые </p>
+                </div>
+                <div class="bl2_card2">
+                    <p class="bl2_option"> Стандарт </p>
+                    <p class="bl2_price"> от 499 ₽/м² </p>
+                    <p class="bl2_feature"> Матовые <br> Глянцевые <br> Сатиновые </p>
+                </div>
 
- </article>
- <article class="block3">
-    <section class="stock">
-        <h2><b>Акции</b></h2>
-        
-             <img class="banner1" src="./assets/images/block3/block3_2/block3_2_2_2.svg" alt="Банер">
-           <!-- <img class="banner2" src="./assets/images/block3/block3_1_1.png" alt="">-->
-        <button id="left"></button>
-        <button id="right"></button>
-        
-    </section>
-    <section class="advantages">
-        <h2>Почему нас выбирают?</h2>
-        <img class="img_advantages" src="./assets/images/block3/block3_3.svg" alt="">
-        <img class="img_advantages" src="./assets/images/block3/block3_4.svg" alt="">
-        <img class="img_advantages" src="./assets/images/block3/block3_5.svg" alt="">
-        <img class="img_advantages"src="./assets/images/block3/block3_6.svg" alt="">
-        <img class="img_advantages" src="./assets/images/block3/block3_7.svg" alt="">
-        <img class="img_advantages" src="./assets/images/block3/block3_8.svg" alt="">
+                <div class="bl2_card3">
+                    <p class="bl2_option"> Премиум </p>
+                    <p class="bl2_price"> от 549 ₽/м² </p>
+                    <p class="bl2_feature"> Матовые <br> Глянцевые <br> Сатиновые </p>
+                </div>
+                <div class="bl2_card4">
+                    <p class="bl2_option"> Парящие <br> потолки </p>
+                    <p class="bl2_price"> от 1200 ₽/м² </p>
+                    <p class="bl2_feature">Подключение подсветки <br>нашими электриками<br>
+                        Поддержка Умным Домом </p>
+                </div>
+                <div class="bl2_card5">
+                    <p class="bl2_option">Световые <br> линии FLEXY </p>
+                    <p class="bl2_price"> от 2499 ₽/м² </p>
+                    <p class="bl2_feature">Эффект волны<br>
+                    Поддержка умным <br>домом от Яндекс </p>
+                </div>
+            </div>
+
+            <div class="bl2_desc"> 
+                <p class="desc_title"> Монтаж натяжных потолков </p>
+                <div class="bl2_desc_all_cards">
+                    <div class="desc_card1">
+                        <p class="desc_option"> Эконом </p>
+                        <p class="desc_price"> от 399 ₽/м² </p>
+                        <p class="desc_feature"> Матовые<br>
+                            Глянцевые <br>
+                            Сатиновые </p>
+                        </div>
+                    <div class="desc_card2">
+                    <p class="desc_option"> Стандарт</p>
+                        <p class="desc_price"> от 499 ₽/м² </p>
+                        <p class="desc_feature"> Матовые <br>
+                            Глянцевые <br>
+                            Сатиновые </p>
+                            </div>
+                    <div class="desc_card3">
+                        <p class="desc_option">Премиум</p>
+                        <p class="desc_price"> от 549 ₽/м² </p>
+                        <p class="desc_feature"> Матовые <br>
+                            Глянцевые <br>
+                            Сатиновые </p>
+                </div>
+            <div class="desc_card4">
+                        <p class="desc_option">Парящие <br> потолки</p>
+                        <p class="desc_price"> от 1200 ₽/м²</p>
+                        <p class="desc_feature"> Подключение подсветки <br> нашими электриками<br>
+                            Поддержка Умным Домом </p>
+                        </div>
+                        <div class="desc_card5">
+                            <p class="desc_option">Световые <br> линии <br> FLEXY</p>
+                            <p class="desc_price"> от 2499 ₽/м²</p>
+                            <p class="desc_feature"> Эффект волны<br>
+                             Поддержка умным домом от <br>Яндекс </p>
+                    </div>
+                </div>
+            </div>
+</article>
+        <article class="block3">
+            <section class="stock">
+                <h2><b>Акции</b></h2>
+                <div id="carouselBanners" class="carousel slide ">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="banner1" src="./assets/images/block3/block3_2/block3_2_2_2.svg" alt="Банер">
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="banner2" src="./assets/images/block3/block3_1_1.png" alt="">
+                        </div>
+                    </div>                  
+                </div>
+                <div class="stock_btns">
+                    <button id="left" class="carousel-control-prev" type="button" data-bs-target="#carouselBanners"
+                        data-bs-slide="prev">
+                    </button>
+                    <button id="right" class="carousel-control-next" type="button" data-bs-target="#carouselBanners"
+                            data-bs-slide="next">
+                    </button>
+                </div>  
+            </section>
+            <section class="advantages">
+                <h2>Почему нас выбирают?</h2>
+                <img class="img_advantages" src="./assets/images/block3/block3_3.svg" alt="">
+                <img class="img_advantages" src="./assets/images/block3/block3_4.svg" alt="">
+                <img class="img_advantages" src="./assets/images/block3/block3_5.svg" alt="">
+                <img class="img_advantages" src="./assets/images/block3/block3_6.svg" alt="">
+                <img class="img_advantages" src="./assets/images/block3/block3_7.svg" alt="">
+                <img class="img_advantages" src="./assets/images/block3/block3_8.svg" alt="">
+
+            </section>
+  </article>
+  <article class="work-examples">
+            <p class="work-examples__title">Примеры наших работ</p>
+            <div class="carousel slide work-examples__carousel desktop" id="carouselExampleDesktop">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <div class="desktop_card">
+                            <div class="work-examples__carousel_card">
+                                <div class="carousel_card_pic">
+                                    <div class="main_example"></div>
+                                    <div class="second_example">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="carousel_card_text">
+                                    <div class="carousel_card_text_main">
+                                        <p>Потолок на кухне с какими-то особенностями</p>
+                                        <strong>20 000 ₽</strong>
+                                    </div>
+                                    <div class="carousel_card_text_done">
+                                        Сделано что-то 1
+                                        Сделано что-то 2
+                                        Сделано что-то 3
+                                        Сделано что-то 4
+                                        Сделано что-то 5
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-examples__carousel_card">
+                                <div class="carousel_card_pic">
+                                    <div class="main_example"></div>
+                                    <div class="second_example">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="carousel_card_text">
+                                    <div class="carousel_card_text_main">
+                                        <p>Потолок на кухне с какими-то особенностями</p>
+                                        <strong>20 000 ₽</strong>
+                                    </div>
+                                    <div class="carousel_card_text_done">
+                                        Сделано что-то 1
+                                        Сделано что-то 2
+                                        Сделано что-то 3
+                                        Сделано что-то 4
+                                        Сделано что-то 5
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="desktop_card">
+                            <div class="work-examples__carousel_card">
+                                <div class="carousel_card_pic">
+                                    <div class="main_example"></div>
+                                    <div class="second_example">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="carousel_card_text">
+                                    <div class="carousel_card_text_main">
+                                        <p>Потолок на кухне с какими-то особенностями</p>
+                                        <strong>20 000 ₽</strong>
+                                    </div>
+                                    <div class="carousel_card_text_done">
+                                        Сделано что-то 1
+                                        Сделано что-то 2
+                                        Сделано что-то 3
+                                        Сделано что-то 4
+                                        Сделано что-то 5
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-examples__carousel_card">
+                                <div class="carousel_card_pic">
+                                    <div class="main_example"></div>
+                                    <div class="second_example">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="carousel_card_text">
+                                    <div class="carousel_card_text_main">
+                                        <p>Потолок на кухне с какими-то особенностями</p>
+                                        <strong>20 000 ₽</strong>
+                                    </div>
+                                    <div class="carousel_card_text_done">
+                                        Сделано что-то 1
+                                        Сделано что-то 2
+                                        Сделано что-то 3
+                                        Сделано что-то 4
+                                        Сделано что-то 5
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="desktop_card">
+                            <div class="work-examples__carousel_card">
+                                <div class="carousel_card_pic">
+                                    <div class="main_example"></div>
+                                    <div class="second_example">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="carousel_card_text">
+                                    <div class="carousel_card_text_main">
+                                        <p>Потолок на кухне с какими-то особенностями</p>
+                                        <strong>20 000 ₽</strong>
+                                    </div>
+                                    <div class="carousel_card_text_done">
+                                        Сделано что-то 1
+                                        Сделано что-то 2
+                                        Сделано что-то 3
+                                        Сделано что-то 4
+                                        Сделано что-то 5
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-examples__carousel_card">
+                                <div class="carousel_card_pic">
+                                    <div class="main_example"></div>
+                                    <div class="second_example">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="carousel_card_text">
+                                    <div class="carousel_card_text_main">
+                                        <p>Потолок на кухне с какими-то особенностями</p>
+                                        <strong>20 000 ₽</strong>
+                                    </div>
+                                    <div class="carousel_card_text_done">
+                                        Сделано что-то 1
+                                        Сделано что-то 2
+                                        Сделано что-то 3
+                                        Сделано что-то 4
+                                        Сделано что-то 5
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-examples__carousel_btns">
+                    <button class="carousel-control-prev work-examples__carousel_btn desktop" type="button"
+                        data-bs-target="#carouselExampleDesktop" data-bs-slide="prev">
+                        <img src="./assets/images/reviews_right.svg" aria-hidden="true">
+                    </button>
+                    <button class="carousel-control-next work-examples__carousel_btn desktop" type="button"
+                        data-bs-target="#carouselExampleDesktop" data-bs-slide="next">
+                        <img src="./assets/images/reviews_left.svg" aria-hidden="true">
+                    </button>
+                </div>
+            </div>
+            <div class="carousel slide work-examples__carousel mobile" id="carouselReview">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <div class="work-examples__carousel_card">
+                            <div class="carousel_card_pic">
+                                <div class="main_example"></div>
+                                <div class="second_example">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="carousel_card_text">
+                                <div class="carousel_card_text_main">
+                                    <p>Потолок на кухне с какими-то особенностями</p>
+                                    <strong>20 000 ₽</strong>
+                                </div>
+                                <div class="carousel_card_text_done">
+                                    Сделано что-то 1
+                                    Сделано что-то 2
+                                    Сделано что-то 3
+                                    Сделано что-то 4
+                                    Сделано что-то 5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="work-examples__carousel_card">
+                            <div class="carousel_card_pic">
+                                <div class="main_example"></div>
+                                <div class="second_example">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="carousel_card_text">
+                                <div class="carousel_card_text_main">
+                                    <p>Потолок на кухне с какими-то особенностями</p>
+                                    <p>20 000 ₽</p>
+                                </div>
+                                <div class="carousel_card_text_done">
+                                    Сделано что-то 1
+                                    Сделано что-то 2
+                                    Сделано что-то 3
+                                    Сделано что-то 4
+                                    Сделано что-то 5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="work-examples__carousel_card">
+                            <div class="carousel_card_pic">
+                                <div class="main_example"></div>
+                                <div class="second_example">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="carousel_card_text">
+                                <div class="carousel_card_text_main">
+                                    <p>Потолок на кухне с какими-то особенностями</p>
+                                    <p>20 000 ₽</p>
+                                </div>
+                                <div class="carousel_card_text_done">
+                                    Сделано что-то 1
+                                    Сделано что-то 2
+                                    Сделано что-то 3
+                                    Сделано что-то 4
+                                    Сделано что-то 5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-examples__carousel_btns">
+                    <button class="carousel-control-prev work-examples__carousel_btn" type="button"
+                        data-bs-target="#carouselReview" data-bs-slide="prev">
+                        <img src="./assets/images/reviews_right.svg" aria-hidden="true">
+                    </button>
+                    <button class="carousel-control-next work-examples__carousel_btn" type="button"
+                        data-bs-target="#carouselReview" data-bs-slide="next">
+                        <img src="./assets/images/reviews_left.svg" aria-hidden="true">
+                    </button>
+                </div>
+            </div>
+        </article>
+            <article class="block5">
+                <h2 class="block5_title" >Запишитесь на бесплатный замер потолков</h2>
+                <p class="block5_desc">Специалист приедет в удобное для вас время, замерит помещения, продемонстрирует материалы и подберет подходящие конструкции</p>
+                <div class="wrapper">
+                <div class="block5_items">
+                    <ul class="svg-ticks">
+                        <li class="text2"> Вы узнаете точную итоговую стоимость и сроки монтажа потолка</li>
+                        <li class="text2">Услуга бесплатная, даже если вы откажетесь от заказа!</li>
+                    </ul>
+                </div>
+            <div class="container root">  
+                    <div class="row">
+                        <div class=" col-11">
+                            <form class="mt-3 form">
+                                <div class="col-auto form_text ">
+                                    <input type="text" class="form-control form__input" id="name" placeholder="Имя">
+                                </div>
+                                <div class="col-auto form_text"> 
+                                    <input type="text" class="form-control form__input" id="phone" placeholder="Телефон">
+                                </div>
+                                <div class="col-auto form_text"> 
+                                    <input type="text" class="form-control form__input" id="address" placeholder="Адрес">
+                                </div>
+                            </form>
+                            <div class=" block5_btn">
+                                <input class="btn  button_order" type="submit" value="Заказать замер">
+                                </div>
+                                <p class="politics">Нажимая кнопку “Заказать замер” вы соглашаетесь на обработку персональных данных в соответствии с политикой конфиденциальности</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </article>
+        <article class="block6_review">
+        <section class="block6">
+            <div class="block6_mobile">
+                <p class="block6_title">Отзывы</p>
+                <ol class="block6_carousel_mobile">
+                    <li id="block6_carousel_slide1" class="block6_carousel_mobile_slide">
+                        <div class="block6_carousel_slide_pics">
+                            <img class="block6_carousel_mobile_slide_pics_item"
+                                src="./assets/images/block6/Block6_review1.svg" alt="feedback">
+                        </div>
+                        <div class="block6_carousel_mobile_snapper">
+                            <a href="#block6_carousel_slide6" class="block6_carousel_prev"><img
+                                    src="./assets/images/block6/Block6_arrow_left.svg" alt="go to previous"></a>
+                            <a href="#block6_carousel_slide2" class="block6_carousel_next"><img
+                                    src="./assets/images/block6/Block6_arrow_right.svg" alt="go to next"></a>
+                        </div>
+                    </li>
+
+                    <li id="block6_carousel_slide2" class="block6_carousel_mobile_slide">
+                        <div class="block6_carousel_slide_pics">
+                                <img class="block6_carousel_mobile_slide_pics_item"
+                                    src="./assets/images/block6/Block6_review2.svg" alt="feedback">
+                        </div>
+                        <div class="block6_carousel_mobile_snapper">
+                            <a href="#block6_carousel_slide1" class="block6_carousel_prev"><img
+                                    src="./assets/images/block6/Block6_arrow_left.svg" alt="go to previous"></a>
+                            <a href="#block6_carousel_slide3" class="block6_carousel_next"><img
+                                    src="./assets/images/block6/Block6_arrow_right.svg" alt="go to next"></a>
+                        </div>
+                    </li>
+
+                    <li id="block6_carousel_slide3" class="block6_carousel_mobile_slide">
+                        <div class="block6_carousel_slide_pics">
+                            <img class="block6_carousel_mobile_slide_pics_item"
+                                src="./assets/images/block6/Block6_review3.svg" alt="feedback">
+                        </div>
+                        <div class="block6_carousel_mobile_snapper">
+                            <a href="#block6_carousel_slide2" class="block6_carousel_prev"><img
+                                    src="./assets/images/block6/Block6_arrow_left.svg" alt="go to previous"></a>
+                            <a href="#block6_carousel_slide4" class="block6_carousel_next"><img
+                                    src="./assets/images/block6/Block6_arrow_right.svg" alt="go to next"></a>
+                        </div>
+                    </li>
+                    <li id="block6_carousel_slide4" class="block6_carousel_mobile_slide">
+                        <div class="block6_carousel_slide_pics">
+                            <img class="block6_carousel_mobile_slide_pics_item"
+                                src="./assets/images/block6/Block6_review4.svg" alt="feedback">
+                        </div>
+                        <div class="block6_carousel_mobile_snapper">
+                            <a href="#block6_carousel_slide3" class="block6_carousel_prev"><img
+                                    src="./assets/images/block6/Block6_arrow_left.svg" alt="go to previous"></a>
+                            <a href="#block6_carousel_slide5" class="block6_carousel_next"><img
+                                    src="./assets/images/block6/Block6_arrow_right.svg" alt="go to next"></a>
+                        </div>
+                    </li>
+                    <li id="block6_carousel_slide5" class="block6_carousel_mobile_slide">
+                        <div class="block6_carousel_slide_pics">
+                            <img class="block6_carousel_mobile_slide_pics_item"
+                                src="./assets/images/block6/Block6_review5.svg" alt="feedback">
+                        </div>
+                        <div class="block6_carousel_mobile_snapper">
+                            <a href="#block6_carousel_slide4" class="block6_carousel_prev"><img
+                                    src="./assets/images/block6/Block6_arrow_left.svg" alt="go to previous"></a>
+                            <a href="#block6_carousel_slide6" class="block6_carousel_next"><img
+                                    src="./assets/images/block6/Block6_arrow_right.svg" alt="go to next"></a>
+                        </div>
+                    </li>
+                    <li id="block6_carousel_slide6" class="block6_carousel_mobile_slide">
+                        <div class="block6_carousel_slide_pics">
+                            <img class="block6_carousel_mobile_slide_pics_item"
+                                src="./assets/images/block6/Block6_review6.svg" alt="feedback">
+                        </div>
+                        <div class="block6_carousel_mobile_snapper">
+                            <a href="#block6_carousel_slide5" class="block6_carousel_prev"><img
+                                    src="./assets/images/block6/Block6_arrow_left.svg" alt="go to previous"></a>
+                            <a href="#block6_carousel_slide1" class="block6_carousel_next"><img
+                                    src="./assets/images/block6/Block6_arrow_right.svg" alt="go to next"></a>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            
+        </section>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner" style="margin-bottom: 20px;">
+                <div class="carousel-item active">
+                    <div class="styled-slyder">
+                        <img src="./assets/images/block6/Block6_review1.svg" alt="feedback">
+                        <img src="./assets/images/block6/Block6_review2.svg" alt="feedback">
+                        <img src="./assets/images/block6/Block6_review3.svg" alt="feedback">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="styled-slyder">
+                        <img src="./assets/images/block6/Block6_review4.svg" alt="feedback">
+                        <img src="./assets/images/block6/Block6_review5.svg" alt="feedback">
+                        <img src="./assets/images/block6/Block6_review6.svg" alt="feedback">
+                    </div>
+                </div>
+            </div>   
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <img src="./assets/images/block6/Block6_arrow_left.svg" />
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <img src="./assets/images/block6/Block6_arrow_right.svg" />
+            </button>
+        </div>
+    </article>
     
-    </section>
-    
- </article>
-</main>
-<footer>
-    
-</footer>
-=======
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+        <article class="block-7">
+            <p class="title-blc7">Полезная информация</p>
+            <div class="faq">
+                <div class="faq-item">
+                    <label class="faq-title" for="faq_1"> Зачем нужен замер натяжных потолков</label>
+                    <input class="faq-input" type="checkbox" id="faq_1">
+                    <div class="faq-text">
+                        Специалист проводит все необходимые замеры и предварительную разметку помещения, так как
+                        натяжной потолок изготавливают индивидуально под размер каждой комнаты. Составляет план будущего
+                        потолка с учетом данных замера и всех нюансов помещения.<br>
+                        <br>Есть особенности комнат, на которые обязательно нужно посмотреть до изготовления потолка.
+                        Например, на большие вентиляционные трубы, гипсокартонные короба, шкафы до потолка. Мастер на
+                        замере обсуждает с клиентом нюансы и решает, как лучше установить натяжной потолок в этих
+                        случаях.<br>⁣
+                        <br>⁣⁣Специалист-замерщик покажет вам каталоги расцветок натяжных потолков и презентуют вам
+                        последние тенденции в данной сфере, а также поможет с выбором, подскажет варианты дизайна и
+                        ответит на все ваши вопросы.<br>
+                        <br>⁣И самое важное, что нужно помнить! УЗНАТЬ ТОЧНУЮ СТОИМОСТЬ ПОТОЛКА МОЖНО ТОЛЬКО ПОСЛЕ
+                        ПРОФЕССИОНАЛЬНОГО ЗАМЕРА.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <label class="faq-title" for="faq_2"> Освещение с помощью светодиодной ленты</label>
+                    <input class="faq-input" type="checkbox" id="faq_2">
+                    <div class="faq-text">
+                        Освещение c помощью светодиодной ленты - это современное решение и модный дизайнерский ход.<br>⁣
+                        <br>⁣Но при выборе указанного типа освещения возникает вопрос о месте установки блока питания
+                        для светодиодной ленты.<br>⁣
+                        <br><strong>⁣Места для размещения блоков питания:</strong><br>⁣
+                        <ul>
+                            <li class="li-blc7">ниша для штор: если вы делаете межуровневую подсветку многоуровневого потолка, в
+                                пространстве этой ниши будет достаточно места;</li>
+                            <li class="li-blc7">можно использовать пространство подвесного или натяжного потолка;⁣⁣</li>
+                            <li class="li-blc7">и, конечно же, в профиль: при монтаже светодиодной ленты часто используется алюминиевый
+                                профиль, и блок питания можно спрятать именно там.</li>
+                        </ul>
+                        Но, эти варианты применимы, если позволяют размеры самого блока питания.<br>
+                        <br>
+                        Чтобы замаскировать блок большого размера и мощности, иногда требуется создать специальное
+                        отверстие в мебели.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <label class="faq-title" for="faq_3"> Теплый и холодный свет светодиодных ламп</label>
+                    <input class="faq-input" type="checkbox" id="faq_3">
+                    <div class="faq-text">
+                        Искусственное и естественное освещение имеет оттенок, который называют цветовой температурой,
+                        измеряемой в Кельвинах (К). Утренний и вечерний свет — теплый (2700-3000 К). Зимой в пасмурную
+                        погоду тон холодный (5000-6500 К), дневной — нейтральный (4000-4100 К).<br>
+                        <br>Цветовая температура влияет на настроение людей и подбирается в зависимости от назначения
+                        помещения. Так, в рабочем кабинете, ванной, гардеробной можно установить бодрящий холодный свет.
+                        Для спальни и детской больше подходит расслабляющее теплое освещение.⁣⁣⠀
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <label class="faq-title" for="faq_4"> Нестандартное освещение в дизайне интерьера - световые
+                        линии</label>
+                    <input class="faq-input" type="checkbox" id="faq_4">
+                    <div class="faq-text">
+                        Вариант освещения для тех, кто шагает в ногу со временем.⁣⁣<br>
+                        <br>Световые линии можно использовать в качестве основного или дополнительного источника света,
+                        они отлично освещают помещение и при этом интересно выглядят.<br>
+                        <br>Световые полосы могут иметь совершенно разную длину, толщину и форму.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <label class="faq-title" for="faq_5"> Современные натяжные потолки</label>
+                    <input class="faq-input" type="checkbox" id="faq_5">
+                    <div class="faq-text">
+                        Мода в оформлении интерьеров не останавливается, и вместе с тем⠀появляются свежие решения в
+                        дизайне натяжных потолков.⁣<br>
+                        <br>ПРОФИЛИ<br>
+                        <br>Eurokraab
+                        <br>EuroKRAAB - это специальный профиль черного цвета, который предназначен для создания теневых
+                        зазоров между стеной и потолком. Благодаря такому методу крепления создаётся ощущение, словно
+                        потолок парит в воздухе, совершенно не касаясь стен. Вставки не используется.<br>⁣⁣
+                        <br>ШТОК
+                        <br>Натяжное полотно монтируется к стене без видимого люфта. Идеальное прилегание материала
+                        потолка к плоскости стены с помощью профильных систем ШТОК позволяет обойтись без
+                        дополнительного устройства плинтусов или использования маскировочной ленты.⁣⁣<br>
+                        <br>Карниз-ПК5 <br>
+                        Алюминиевый Профиль ПК-5, одновременно, является и профилем для монтажа натяжного потолка и
+                        карнизом для вашей будущей шторы.⁣⁣<br>
+                        Карниз полностью скрыт за полотном. Отсутствие видимого крепления создает ощущение «парящих»
+                        штор, что позволяет визуально увеличить высоту помещения.⁣<br><br>ОСВЕЩЕНИЕ <br><br>Световые
+                        линии ⁣⁣⠀<br>Световые полосы на потолке образуют узоры, линии и круги. Их можно использовать как
+                        основное, либо дополнительное декоративное освещение. <br><br>Slott<br>Один из интересных
+                        способов оформления натяжного потолка в плане освещения — бесщелевая система Slott, которую
+                        можно использовать как базис для основных осветительных приборов, для декоративного освещения,
+                        для размещения трек-систем, дополнительных приборов.⁣<br><br>Трековые светильники⁣⁣⠀<br>Трековый
+                        светильник представляет собой модульную систему, способную изменять направление светового потока
+                        и перемещаться в пространстве без отключения от питания.<br>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <label class="faq-title" for="faq_6"> Можно ли в ванной комнате устанавливать натяжной
+                        потолок</label>
+                    <input class="faq-input" type="checkbox" id="faq_6">
+                    <div class="faq-text">
+                        Профессионалы убеждены, что можно, но с некоторыми оговорками:⁣⁣<br>
+                        ⁣<br>
+                        <ul>
+                            <li class="li-blc7">для ванной рекомендуется выбирать плёночное полотно, которое обладает всеми
+                                характеристиками для эксплуатации в условиях повышенного парообразования и влажности.
+                            </li>
+                            <li class="li-blc7">от тканевых потолков из-за невысокой паропроницаемости следует отказаться, со временем
+                                на них могут образовываться жёлтые подтёки.⁣⁣</li>
+                            <li class="li-blc7">в ванной должна быть хорошая естественная или принудительная вентиляция во избежание
+                                образования грибка и плесени.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="map-blc7">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.4715464998417!2d39.71182687586308!3d47.226921514119844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b90902b51c45%3A0xa1d680c755c8f65b!2z0YPQuy4g0JzQsNC60YHQuNC80LAg0JPQvtGA0YzQutC-0LPQviwgMTUxLCDQoNC-0YHRgtC-0LIt0L3QsC3QlNC-0L3Rgywg0KDQvtGB0YLQvtCy0YHQutCw0Y8g0L7QsdC7LiwgMzQ0MDAy!5e0!3m2!1sru!2sru!4v1726670089858!5m2!1sru!2sru"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+    </main>
+    <footer id="contac-us">
+        <h2 class="contact_info_footer">Контактная информация</h2>
+        <div class="number_footer">Телефон:</div>
+        <h3 class="number_footer_2">+7 958 538-33-38</h3>
+        <button class="button_footer">Заказать замер</button>
+        <div class="messengers_footer">Мессенджеры и социальные сети:</div>
+        <div class="display_footer">
+            <div class="display_footer_2">
+                <div class="messengers_logo_footer">
+                    <img src="./assets/images/logo_messengers/tg.png" alt="логтип тг" class="messengers_logo_footer_2">
+                    <img src="./assets/images/logo_messengers/wa.png" alt="логтип вотсап"
+                        class="messengers_logo_footer_2">
+                    <img src="./assets/images/logo_messengers/inst.png" alt="логтип инст" class="messengers_logo_footer_2">
+                </div>
+                <div class="hours">Часы работы:</div>
+                <h3 class="hours_2">Пн - Вс: с 9:00 до 21:00</h3>
+            </div>
+            <img src="./assets/images/logo/kub_logo-icon.png" alt="логотип" class="logo_footer">
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <sctipt src="./index.js"></sctipt>
 </body>
+
 </html>
