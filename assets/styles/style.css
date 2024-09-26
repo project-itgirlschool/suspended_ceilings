@@ -1866,8 +1866,8 @@ h2.contact_info_footer {
       }
     }
     .styled-slyder img{
-      width: 200px;
-      height: 350px;
+      width: 250px;
+      height: 500px;
     }
   
   
@@ -2260,8 +2260,8 @@ h2.contact_info_footer {
     width: 250px;
     height: 500px;
     @media screen and (min-width:768px) {
-        width: 200px;
-        height: 350px;
+        width: 250px;
+      height: 500px;
       }
   }
 
