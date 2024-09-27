@@ -56,12 +56,13 @@ header>a>.icon-phone {
     z-index: 1;
 }
 
-.icon-phone img{
+.icon-phone {
     width: 33px;
     height: 30px;
 
-    @media screen and (min-width:460px) {
+    @media screen and (min-width: 375px) {
         display: none;
+    }
 }
 
 .menu-button {
