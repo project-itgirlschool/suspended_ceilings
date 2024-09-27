@@ -411,9 +411,11 @@ nav.menu-list-adaptive {
 
 .faq-input {
     appearance: none;
-    padding-top: 11px;
+    position: relative;
+    right: 17px;
+    /* padding-top: 11px;
     padding-bottom: 11px;
-    padding-right: 17px;
+    padding-right: 17px; */
     cursor: pointer;
 }
 
@@ -641,9 +643,8 @@ nav.menu-list-adaptive {
 
 .faq-input {
     appearance: none;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-right: 17px;
+    position: relative;
+    right: 17px;
     cursor: pointer;
 }
 
