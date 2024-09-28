@@ -198,13 +198,13 @@ nav.menu-list-adaptive {
 
 .video_for_computer_vers {
     display: none;
-    @media screen and (min-width:460px) {
+    @media screen and (min-width:640px) {
         display: block;
     }
 }
 
 .video_for_mobile_vers {
-    @media screen and (min-width:460px) {
+    @media screen and (min-width:640px) {
         display: none;
     }
 }
